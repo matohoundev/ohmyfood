@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <title>ohmyfood</title>
     <link rel="stylesheet" href="public/css/style.css">
 </head>
+
 <body>
-    <header>
+    <header class="header-accueil">
         <img src="./assets/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
     </header>
     <div>
@@ -22,23 +24,29 @@
     </nav>
     <section>
         <h2>Fonctionnement</h2>
-        <div>
-            <button>
-                <span>1</span>
-                <i></i>
-                <p>Choissisez un restaurant</p>
-            </button>
-            <button>
-                <span>2</span>
-                <i></i>
-                <p>Composez votre menu</p>
-            </button>
-            <button>
-                <span>3</span>
-                <i></i>
-                <p>Dégustez au restaurant</p>
-            </button>
-        </div>
+        <ul class="list-fonctionnality">
+            <li>
+                <a href="#" class="card-fonctionnality">
+                    <span>1</span>
+                    <i></i>
+                    <p>Choissisez un restaurant</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="card-fonctionnality">
+                    <span>2</span>
+                    <i></i>
+                    <p>Composez votre menu</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="card-fonctionnality">
+                    <span>3</span>
+                    <i></i>
+                    <p>Dégustez au restaurant</p>
+                </a>
+            </li>
+        </ul>
     </section>
     <section>
         <h2>Restaurants</h2>
@@ -96,11 +104,12 @@
     <footer>
         <img src="./assets/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
         <ul>
-            <li><i></i>Proposer un restaurant</li>
-            <li><i></i>Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li>Contact</li>
+            <li><a href="#">Proposer un restaurant</a><i></i></li>
+            <li><a href="#">Devenir partenaire</a><i></i></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="mailto:#">Contact</a></li>
         </ul>
     </footer>
 </body>
+
 </html>
