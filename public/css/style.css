@@ -8,9 +8,60 @@
 
 body {
   margin: 0;
-  font-family: "raleway", Georgia, "Times New Roman", Times, serif;
+  font-family: "roboto", Georgia, "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* font-weight */
+/*Color Base*/
+/*Size screen*/
+/*Border*/
+@font-face {
+  font-family: "roboto";
+  font-display: swap;
+  src: url("../../assets/fonts/roboto/Roboto-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "roboto_bold";
+  font-display: swap;
+  src: url("../../assets/fonts/roboto/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "roboto_ex_bold";
+  font-display: swap;
+  src: url("../../assets/fonts/roboto/Roboto-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "shrikhand";
+  font-display: swap;
+  src: url("../../assets/fonts/shrikhand/Shrikhand-Regular.ttf") format("truetype");
+}
+/* font-weight */
+/*Color Base*/
+/*Size screen*/
+/*Border*/
+body > header {
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid blue;
+}
+body > header.header-menu {
+  display: block;
+}
+
+.logo {
+  width: 130px;
 }
 
 /*# sourceMappingURL=style.css.map */

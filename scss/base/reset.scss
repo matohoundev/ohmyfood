@@ -9,7 +9,15 @@
 body {
   // max-width: 1600px;
   margin: 0;
-  font-family: "raleway", Georgia, "Times New Roman", Times, serif;
+  font-family: "roboto", Georgia, "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }

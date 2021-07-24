@@ -1,0 +1,40 @@
+/* font-weight */
+
+$bold: bold;
+$light: lighter;
+
+/*Color Base*/
+
+$main-color: #9356DC;
+$secondary-color:#FF79DA;
+$third-color: #99E2D0;
+
+$color-dark:#000000;
+$color-grey:#FAFAFA;
+$color-clear:#ffffff;
+$colorT: transparent;
+
+/*Size screen*/
+
+$max-height-vh:100vh;
+$max-height-percent:100%;
+$half-height-vh:50vh;
+$half-height-percent:50%;
+
+$max-width-vw: 100vw;
+$max-width-percent: 100%;
+$half-width-vw: 50vw;
+$half-width-percent: 50%;
+
+/*Border*/
+
+$arrondi: 10px;
+$round: 1em;
+
+//devices
+$xsm: 414px;
+$sm: 768px;
+$md: 1024px;
+$lm: 1440px;
+$xlm: 1920px;
+$xxlm: 2500px;
