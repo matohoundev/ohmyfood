@@ -1,9 +1,19 @@
-@import "../utils/variables.scss";
-
 @font-face {
   font-family: "roboto";
   font-display: swap;
   src: url("../../assets/fonts/roboto/Roboto-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto_re";
+  font-display: swap;
+  src: url("../../assets/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto_md";
+  font-display: swap;
+  src: url("../../assets/fonts/roboto/Roboto-Medium.ttf") format("truetype");
 }
 
 @font-face {

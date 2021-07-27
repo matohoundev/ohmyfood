@@ -9,9 +9,13 @@
 body {
   // max-width: 1600px;
   margin: 0;
-  font-family: "roboto", Georgia, "Times New Roman", Times, serif;
+  font-family: "roboto_re", Georgia, "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body > header, nav, section, footer {
+  padding: 0 20px;
 }
 
 ul {

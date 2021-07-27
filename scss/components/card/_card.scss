@@ -1,0 +1,47 @@
+.list-functionality {
+    p {
+        padding-left: 30px;
+    }
+    li:nth-child(2) {
+        i {
+            left: 8px;
+            font-size: 18px;
+        }
+    }
+    li:nth-child(3) {
+        i {
+            left: 8px;
+            font-size: 16px;
+        }
+    }
+}
+
+.card-functionality {
+    height: 73px;
+    width: 323px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    border-radius: $arrond_md;
+    background-color: lighten($color-grey, 6%);
+    span, i {
+        position: relative;
+    }
+    span {
+        height: 25px;
+        width: 25px;
+        left: -12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: $round;
+        background-color: $main-color;
+    }
+    i {
+        left: 10px;
+        color: darken($color-grey, 60%);
+        font-size: 20px;
+    }
+    box-shadow: 0 5px 10px 1px darken($color-grey, 6%);
+}

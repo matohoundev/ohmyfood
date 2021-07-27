@@ -3,12 +3,7 @@ body > header {
     display: flex;
     justify-content: center;
     align-content: center;
-    border: 1px solid blue;
     &.header-menu {
         display: block;
     }
-}
-
-.logo {
-    width: 130px;
 }

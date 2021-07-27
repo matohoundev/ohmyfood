@@ -1,0 +1,48 @@
+h2 {
+    font-family: "roboto_ex_bold", 'Courier New', Courier, monospace;
+}
+
+h3 {
+    font-family: "roboto_bold", 'Courier New', Courier, monospace;
+    color: $color-dark;
+}
+
+a {
+    color: $color-dark;
+}
+
+button{
+    font-family: "Roboto_re";
+    font-size: 16px;
+}
+
+li {
+    span{
+        font-size: 14px;
+        color: $color-clear;
+    }
+}
+
+.card-functionality p {
+    font-family: "Roboto_md";
+}
+
+header {
+    .logo {
+    width: 165px;
+}
+    h2 {
+        font-family: "Shrikhand";
+    }
+}
+
+.location {
+    font-family: 'roboto_bold';
+    color: darken($color-grey, 70%);
+}
+
+footer {
+    .logo {
+        width: 100px;
+    }
+}

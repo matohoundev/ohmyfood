@@ -1,0 +1,32 @@
+.location {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-grey;
+    p {
+        padding-left: 18px;
+    }
+}
+.nav-header {
+    height: 290px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: lighten($color-grey, 6%);
+    h2 {
+        padding: 0 7% 10px 7%;
+    }
+    p {
+        padding-bottom: 30px;
+    }
+}
+
+.functionality, .restaurants {
+    h2 {
+        padding-top: 50px;
+    }
+}
