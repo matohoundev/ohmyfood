@@ -1,6 +1,5 @@
-/* font-weight */
 /*Color Base*/
-/*Size screen*/
+/*Box shadow*/
 /*Border*/
 @font-face {
   font-family: "roboto";
@@ -72,6 +71,11 @@ a {
   color: #000000;
 }
 
+.fa-heart {
+  font-size: 27px;
+  color: #3f3d3d;
+}
+
 button {
   font-family: "Roboto_re";
   font-size: 16px;
@@ -102,7 +106,7 @@ footer .logo {
   width: 100px;
 }
 
-.nav-header button {
+.nav-header__btn {
   height: 48px;
   width: 220px;
   color: #ffffff;
@@ -110,8 +114,37 @@ footer .logo {
   background: linear-gradient(175deg, #ff79da 0%, #9356dc 70%);
   border: none;
   border-radius: 200px;
+  box-shadow: 0 5px 10px 1px #dbdbdb;
 }
 
+.list-functionality .card-functionality {
+  height: 73px;
+  width: 323px;
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #f9f9f9;
+  box-shadow: 0 5px 10px 1px #dbdbdb;
+}
+.list-functionality .card-functionality span, .list-functionality .card-functionality i {
+  position: relative;
+}
+.list-functionality .card-functionality span {
+  height: 25px;
+  width: 25px;
+  left: -12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  background-color: #9356DC;
+}
+.list-functionality .card-functionality i {
+  left: 10px;
+  color: #515151;
+  font-size: 20px;
+}
 .list-functionality p {
   padding-left: 30px;
 }
@@ -124,34 +157,40 @@ footer .logo {
   font-size: 16px;
 }
 
-.card-functionality {
-  height: 73px;
-  width: 323px;
-  margin-left: 12px;
+.list-restaurants .card-restaurant {
+  height: 253px;
+  width: 100%;
+  max-width: 335px;
   display: flex;
-  align-items: center;
-  border-radius: 25px;
-  background-color: #f9f9f9;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 1em;
   box-shadow: 0 5px 10px 1px #dbdbdb;
 }
-.card-functionality span, .card-functionality i {
-  position: relative;
+.list-restaurants .card-restaurant__img {
+  height: 175px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1em 1em 0 0;
 }
-.card-functionality span {
-  height: 25px;
-  width: 25px;
-  left: -12px;
+.list-restaurants .card-restaurant__txt {
+  height: 78px;
+  width: 80%;
+  padding-left: 15px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.list-restaurants .card-restaurant__txt h3 {
+  padding-bottom: 4px;
+}
+.list-restaurants .card-restaurant__icon {
+  height: 78px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: none;
-  border-radius: 1em;
-  background-color: #9356DC;
-}
-.card-functionality i {
-  left: 10px;
-  color: #515151;
-  font-size: 20px;
 }
 
 body > header {
@@ -161,7 +200,15 @@ body > header {
   align-content: center;
 }
 body > header.header-menu {
-  display: block;
+  border: 1px solid blue;
+}
+body > header.header-menu a {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+}
+body > header.header-menu img {
+  border: 1px solid green;
 }
 
 .location {
@@ -183,7 +230,7 @@ body > header.header-menu {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #f4f4f4;
 }
 .nav-header h2 {
   padding: 0 7% 10px 7%;
@@ -192,8 +239,59 @@ body > header.header-menu {
   padding-bottom: 30px;
 }
 
+.functionality, .restaurants {
+  padding-bottom: 70px;
+}
 .functionality h2, .restaurants h2 {
   padding-top: 50px;
+  padding-bottom: 20px;
+}
+.functionality .list-functionality li:not(:first-child), .functionality .list-restaurants li:not(:first-child), .restaurants .list-functionality li:not(:first-child), .restaurants .list-restaurants li:not(:first-child) {
+  padding-top: 20px;
+}
+
+.restaurants {
+  background-color: #f4f4f4;
+}
+
+main .banner {
+  height: 225px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  object-fit: cover;
+}
+main .menu {
+  margin-top: -30px;
+  padding-top: 30px;
+  position: relative;
+  z-index: 2;
+  background-color: #f4f4f4;
+  border-radius: 2em 2em 0 0;
+}
+
+footer {
+  height: 195px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #353535;
+}
+footer .logo {
+  padding-bottom: 15px;
+}
+footer ul li {
+  line-height: 25px;
+}
+footer ul li i {
+  width: 22px;
+  font-size: 13px;
+}
+footer ul li a {
+  color: #ffffff;
+}
+footer ul :nth-child(2) i {
+  font-size: 11px;
 }
 
 /*# sourceMappingURL=style.css.map */

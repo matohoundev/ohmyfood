@@ -4,6 +4,20 @@ body > header {
     justify-content: center;
     align-content: center;
     &.header-menu {
-        display: block;
+        // display: block;
+        border: 1px solid blue;
+        a {
+            // position: relative;
+            // left: 0px;
+            display: flex;
+            // justify-content: start;
+            align-items: center;
+            border: 1px solid red;
+            // flex-basis: 10px;
+        }
+        img {
+            border: 1px solid green;
+            // flex-basis: 165px;
+        }
     }
 }

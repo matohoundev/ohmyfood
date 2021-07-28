@@ -1,0 +1,29 @@
+footer {
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #353535;
+    .logo {
+        // color: $color-clear;
+        padding-bottom: 15px;
+    }
+    ul {
+        li {
+            line-height: 25px;
+            i {
+                width: 22px;
+                font-size: 13px;
+            }
+             a {
+                color: $color-clear;
+            }
+        }
+        :nth-child(2) {
+            i {
+                font-size: 11px;
+            }
+        }
+    }
+   
+}

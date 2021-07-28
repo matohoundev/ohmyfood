@@ -1,4 +1,4 @@
-.nav-header button{
+.nav-header__btn {
     height: 48px;
     width: 220px;
     color: $color-clear;
@@ -6,4 +6,5 @@
     background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 70%);
     border: none;
     border-radius: 200px;
+    box-shadow: $shadow-dark;
 }

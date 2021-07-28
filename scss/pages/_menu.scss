@@ -1,0 +1,17 @@
+main {
+    .banner {
+        height: 225px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        object-fit: cover;
+    }
+    .menu {
+        margin-top: -30px;
+        padding-top: 30px;
+        position: relative;
+        z-index: 2;
+        background-color: lighten($color-grey, 4%);
+        border-radius: 2em 2em 0 0;
+    }
+}
