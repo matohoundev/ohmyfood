@@ -1,10 +1,39 @@
 h2 {
-    font-family: "roboto_ex_bold", 'Courier New', Courier, monospace;
+    font-family: "roboto_ex_bold";
 }
 
-h3 {
-    font-family: "roboto_bold", 'Courier New', Courier, monospace;
+.card-restaurants__txt {
+    h3 {
+    font-family: "roboto_bold";
     color: $color-dark;
+}
+}
+
+.card-menu {
+    &__txt {
+        p {
+            font-family: "roboto_re";
+            font-size: 14px;
+            color: darken($color-grey, 70%);
+        }
+    } 
+    &__price {
+        font-family: "roboto_bold";
+        font-size: 15px;
+        color: darken($color-grey, 75%);;
+    }
+}
+
+
+.block-menu {
+    h3 {
+        font-family: "roboto";
+        font-size: 17px;
+    }
+}
+
+h4 {
+    font-size: 17px;
 }
 
 a {
@@ -32,6 +61,15 @@ li {
     font-family: "Roboto_md";
 }
 
+.location {
+    font-family: 'roboto_bold';
+    color: darken($color-grey, 70%);
+}
+
+.menu-header {
+    font-size: 18px;
+}
+
 header {
     .logo {
     width: 165px;
@@ -39,11 +77,6 @@ header {
     h2 {
         font-family: "Shrikhand";
     }
-}
-
-.location {
-    font-family: 'roboto_bold';
-    color: darken($color-grey, 70%);
 }
 
 footer {

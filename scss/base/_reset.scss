@@ -14,8 +14,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body > header, nav, section, footer {
+body > header, nav, section:not(main section), footer {
   padding: 0 20px;
+}
+
+main section:not(main > section > section) {
+  padding: 0 15px;
 }
 
 ul {

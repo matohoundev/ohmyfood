@@ -85,3 +85,40 @@
         }
     }
 }
+
+.list-menu {
+
+    .card-menu {
+        width: 100%;
+        max-width: 350px;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: $arrondi;
+        background-color: $color-clear;
+        box-shadow: $shadow-dark;
+        &__txt {
+            width: $width-txt;
+            padding-left: 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h4 {
+                padding-bottom: 3px;
+            }
+            p {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
+        }
+        &__price {
+            width: $width-price;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 15px;
+        }
+    }
+}

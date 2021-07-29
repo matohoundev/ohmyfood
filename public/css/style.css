@@ -46,8 +46,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body > header, nav, section, footer {
+body > header, nav, section:not(main section), footer {
   padding: 0 20px;
+}
+
+main section:not(main > section > section) {
+  padding: 0 15px;
 }
 
 ul {
@@ -59,12 +63,32 @@ a {
 }
 
 h2 {
-  font-family: "roboto_ex_bold", "Courier New", Courier, monospace;
+  font-family: "roboto_ex_bold";
 }
 
-h3 {
-  font-family: "roboto_bold", "Courier New", Courier, monospace;
+.card-restaurants__txt h3 {
+  font-family: "roboto_bold";
   color: #000000;
+}
+
+.card-menu__txt p {
+  font-family: "roboto_re";
+  font-size: 14px;
+  color: #383838;
+}
+.card-menu__price {
+  font-family: "roboto_bold";
+  font-size: 15px;
+  color: #2b2b2b;
+}
+
+.block-menu h3 {
+  font-family: "roboto";
+  font-size: 17px;
+}
+
+h4 {
+  font-size: 17px;
 }
 
 a {
@@ -90,6 +114,15 @@ li span {
   font-family: "Roboto_md";
 }
 
+.location {
+  font-family: "roboto_bold";
+  color: #383838;
+}
+
+.menu-header {
+  font-size: 18px;
+}
+
 header .logo {
   width: 165px;
 }
@@ -97,16 +130,11 @@ header h2 {
   font-family: "Shrikhand";
 }
 
-.location {
-  font-family: "roboto_bold";
-  color: #383838;
-}
-
 footer .logo {
   width: 100px;
 }
 
-.nav-header__btn {
+button {
   height: 48px;
   width: 220px;
   color: #ffffff;
@@ -114,7 +142,7 @@ footer .logo {
   background: linear-gradient(175deg, #ff79da 0%, #9356dc 70%);
   border: none;
   border-radius: 200px;
-  box-shadow: 0 5px 10px 1px #dbdbdb;
+  box-shadow: 6px 8px 17px -9px #000000;
 }
 
 .list-functionality .card-functionality {
@@ -193,26 +221,65 @@ footer .logo {
   align-items: center;
 }
 
+.list-menu .card-menu {
+  width: 100%;
+  max-width: 350px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px 1px #dbdbdb;
+}
+.list-menu .card-menu__txt {
+  width: 78%;
+  padding-left: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.list-menu .card-menu__txt h4 {
+  padding-bottom: 3px;
+}
+.list-menu .card-menu__txt p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list-menu .card-menu__price {
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 15px;
+}
+
 body > header {
   height: 63px;
   display: flex;
   justify-content: center;
   align-content: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 }
 body > header.header-menu {
-  border: 1px solid blue;
+  box-shadow: none;
 }
-body > header.header-menu a {
+body > header.header-menu .fa-arrow-left {
+  font-size: 20px;
+  position: absolute;
+  left: 1.5em;
+  top: 22px;
   display: flex;
   align-items: center;
-  border: 1px solid red;
-}
-body > header.header-menu img {
-  border: 1px solid green;
+  color: #383838;
 }
 
 .location {
   height: 50px;
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,12 +329,50 @@ main .banner {
   object-fit: cover;
 }
 main .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: -30px;
   padding-top: 30px;
   position: relative;
   z-index: 2;
   background-color: #f4f4f4;
   border-radius: 2em 2em 0 0;
+}
+main .menu-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+main .menu-header .fa-heart {
+  padding-right: 25px;
+}
+main .menu .block-menu {
+  width: 100%;
+}
+main .menu .block-menu h3 {
+  position: relative;
+  padding-bottom: 8px;
+}
+main .menu .block-menu h3::after {
+  content: "";
+  width: 42px;
+  height: 3px;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+main .menu .block-menu .list-menu li {
+  padding-top: 15px;
+}
+main .menu .block-menu .list-menu li:last-child {
+  padding-bottom: 15px;
+}
+main .menu-btn {
+  margin-top: 29px;
+  margin-bottom: 57px;
 }
 
 footer {

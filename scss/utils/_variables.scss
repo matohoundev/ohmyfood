@@ -11,7 +11,9 @@ $colorT: transparent;
 
 /*Box shadow*/
 
+$shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
 $shadow-dark: 0 5px 10px 1px darken($color-grey, 6%);
+$shadow-black: 6px 8px 17px -9px $color-dark;
 
 /*Border*/
 
@@ -26,3 +28,8 @@ $md: 1024px;
 $lm: 1440px;
 $xlm: 1920px;
 $xxlm: 2500px;
+
+// card width
+
+$width-txt: 78%;
+$width-price: 22%;

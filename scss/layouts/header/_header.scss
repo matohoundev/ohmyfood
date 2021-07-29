@@ -3,21 +3,19 @@ body > header {
     display: flex;
     justify-content: center;
     align-content: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: $shadow;
     &.header-menu {
-        // display: block;
-        border: 1px solid blue;
-        a {
-            // position: relative;
-            // left: 0px;
+        box-shadow: none;
+        .fa-arrow-left {
+            font-size: 20px;
+            position: absolute;
+            left: 1.5em;
+            top: 22px;
             display: flex;
-            // justify-content: start;
             align-items: center;
-            border: 1px solid red;
-            // flex-basis: 10px;
-        }
-        img {
-            border: 1px solid green;
-            // flex-basis: 165px;
+            color: darken($color-grey, 70%);
         }
     }
 }
