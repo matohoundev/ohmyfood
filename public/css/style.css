@@ -66,9 +66,13 @@ h2 {
   font-family: "roboto_ex_bold";
 }
 
-.card-restaurants__txt h3 {
+.card-restaurant__txt h3 {
   font-family: "roboto_bold";
   color: #000000;
+}
+.card-restaurant__new {
+  font-family: "roboto_md";
+  color: #217460;
 }
 
 .card-menu__txt p {
@@ -138,8 +142,8 @@ button {
   height: 48px;
   width: 220px;
   color: #ffffff;
-  background: #ff79da;
-  background: linear-gradient(175deg, #ff79da 0%, #9356dc 70%);
+  background: #FF79DA;
+  background: linear-gradient(175deg, #FF79DA 0%, #9356DC 70%);
   border: none;
   border-radius: 200px;
   box-shadow: 6px 8px 17px -9px #000000;
@@ -147,7 +151,8 @@ button {
 
 .list-functionality .card-functionality {
   height: 73px;
-  width: 323px;
+  width: 100%;
+  max-width: 323px;
   margin-left: 12px;
   display: flex;
   align-items: center;
@@ -173,6 +178,12 @@ button {
   color: #515151;
   font-size: 20px;
 }
+.list-functionality .card-functionality--purple {
+  background-color: #ece1f9;
+}
+.list-functionality .card-functionality--purple i {
+  color: #9356DC;
+}
 .list-functionality p {
   padding-left: 30px;
 }
@@ -194,12 +205,25 @@ button {
   flex-wrap: wrap;
   border-radius: 1em;
   box-shadow: 0 5px 10px 1px #dbdbdb;
+  position: relative;
 }
 .list-restaurants .card-restaurant__img {
   height: 175px;
   width: 100%;
   object-fit: cover;
   border-radius: 1em 1em 0 0;
+}
+.list-restaurants .card-restaurant__new {
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #99E2D0;
 }
 .list-restaurants .card-restaurant__txt {
   height: 78px;
@@ -222,9 +246,9 @@ button {
 }
 
 .list-menu .card-menu {
+  height: 70px;
   width: 100%;
   max-width: 350px;
-  height: 70px;
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
@@ -275,6 +299,10 @@ body > header.header-menu .fa-arrow-left {
   align-items: center;
   color: #383838;
 }
+body > header .link-logo {
+  display: flex;
+  align-items: center;
+}
 
 .location {
   height: 50px;
@@ -313,12 +341,61 @@ body > header.header-menu .fa-arrow-left {
   padding-top: 50px;
   padding-bottom: 20px;
 }
-.functionality .list-functionality li:not(:first-child), .functionality .list-restaurants li:not(:first-child), .restaurants .list-functionality li:not(:first-child), .restaurants .list-restaurants li:not(:first-child) {
+.functionality .list-functionality li:not(:first-child), .restaurants .list-functionality li:not(:first-child) {
   padding-top: 20px;
+}
+.functionality .list-restaurants li:not(:first-child), .restaurants .list-restaurants li:not(:first-child) {
+  padding-top: 20px;
+}
+@media all and (min-width: 768px) {
+  .functionality .list-restaurants li:not(:first-child), .restaurants .list-restaurants li:not(:first-child) {
+    padding-top: 0;
+  }
+}
+@media all and (min-width: 768px) {
+  .functionality .list-restaurants li:first-child, .functionality .list-restaurants li:nth-child(2), .restaurants .list-restaurants li:first-child, .restaurants .list-restaurants li:nth-child(2) {
+    padding-bottom: 20px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .functionality {
+    text-align: center;
+  }
+}
+.functionality .list-functionality li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .restaurants {
   background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.restaurants .list-restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media all and (min-width: 768px) {
+  .restaurants .list-restaurants {
+    max-width: 1070px;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+}
+@media all and (min-device-width: 768px) and (max-device-width: 1106px) {
+  .restaurants .list-restaurants {
+    justify-content: center;
+  }
+}
+@media all and (min-width: 768px) {
+  .restaurants .list-restaurants .card-restaurant {
+    margin: 10px;
+  }
 }
 
 main .banner {
@@ -365,6 +442,8 @@ main .menu .block-menu h3::after {
   bottom: 0;
 }
 main .menu .block-menu .list-menu li {
+  display: flex;
+  justify-content: center;
   padding-top: 15px;
 }
 main .menu .block-menu .list-menu li:last-child {
@@ -379,8 +458,15 @@ footer {
   height: 195px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   background-color: #353535;
+}
+@media all and (min-width: 768px) {
+  footer {
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
 }
 footer .logo {
   padding-bottom: 15px;
@@ -397,6 +483,15 @@ footer ul li a {
 }
 footer ul :nth-child(2) i {
   font-size: 11px;
+}
+@media all and (min-width: 768px) {
+  footer ul {
+    width: 100%;
+    max-width: 1070px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

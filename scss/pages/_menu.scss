@@ -41,12 +41,20 @@ main {
                 left: 0;
                 bottom: 0;
             }
-            .list-menu li {
+            .list-menu {
+                li {
+                    display: flex;
+                    justify-content: center;
                     padding-top: 15px;
+                    @media all and (min-width: $sm) {
+                        // display: flex;
+                        // justify-content: center;
+                    }
                     &:last-child {
                         padding-bottom: 15px;
-                    }
+                    } 
                 }
+            }
         }
         &-btn {
             margin-top: 29px;

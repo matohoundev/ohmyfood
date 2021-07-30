@@ -2,12 +2,19 @@ h2 {
     font-family: "roboto_ex_bold";
 }
 
-.card-restaurants__txt {
-    h3 {
-    font-family: "roboto_bold";
-    color: $color-dark;
+.card-restaurant {
+    &__txt {
+        h3 {
+            font-family: "roboto_bold";
+            color: $color-dark;
+        }
+    }
+    &__new {
+        font-family: "roboto_md";
+        color: darken($third-color, 45%);
+    }
 }
-}
+
 
 .card-menu {
     &__txt {

@@ -1,49 +1,57 @@
-.list-functionality {
 
-    .card-functionality {
-        height: 73px;
-        width: 323px;
-        margin-left: 12px;
-        display: flex;
-        align-items: center;
-        border-radius: $arrondi_md;
-        background-color: lighten($color-grey, 6%);
-        span, i {
-            position: relative;
-        }
-        span {
-            height: 25px;
-            width: 25px;
-            left: -12px;
+    .list-functionality {
+
+        .card-functionality {
+            height: 73px;
+            width: 100%;
+            max-width: 323px;
+            margin-left: 12px;
             display: flex;
-            justify-content: center;
             align-items: center;
-            border-radius: $round;
-            background-color: $main-color;
+            border-radius: $arrondi_md;
+            background-color: lighten($color-grey, 6%);
+            box-shadow: $shadow-dark;
+            span, i {
+                position: relative;
+            }
+            span {
+                height: 25px;
+                width: 25px;
+                left: -12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: $round;
+                background-color: $main-color;
+            }
+            i {
+                left: 10px;
+                color: darken($color-grey, 60%);
+                font-size: 20px;
+            }
+            &--purple {
+                background-color: lighten($main-color, 33%);
+                i {
+                    color: $main-color;
+                }
+            }
         }
-        i {
-            left: 10px;
-            color: darken($color-grey, 60%);
-            font-size: 20px;
+    
+        p {
+            padding-left: 30px;
         }
-        box-shadow: $shadow-dark;
-    }
-
-    p {
-        padding-left: 30px;
-    }
-    li:nth-child(2) {
-        i {
-            left: 8px;
-            font-size: 18px;
+        li:nth-child(2) {
+            i {
+                left: 8px;
+                font-size: 18px;
+            }
         }
-    }
-    li:nth-child(3) {
-        i {
-            left: 8px;
-            font-size: 16px;
+        li:nth-child(3) {
+            i {
+                left: 8px;
+                font-size: 16px;
+            }
         }
-    }
 }
 
 .list-restaurants {
@@ -57,12 +65,24 @@
         flex-wrap: wrap;
         border-radius: $round;
         box-shadow: $shadow-dark;
-
+        position: relative;
         &__img {
             height: 175px;
             width: 100%;
             object-fit: cover;
             border-radius: $round $round 0 0;
+        }
+        &__new {
+            width: 80px;
+            height: 30px;
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: $curler;
+            background-color: $third-color;
         }
         &__txt {
             height: 78px;
@@ -89,9 +109,9 @@
 .list-menu {
 
     .card-menu {
+        height: 70px;
         width: 100%;
         max-width: 350px;
-        height: 70px;
         display: flex;
         justify-content: space-between;
         border-radius: $arrondi;
