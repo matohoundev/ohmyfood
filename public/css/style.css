@@ -148,6 +148,14 @@ button {
   border-radius: 200px;
   box-shadow: 6px 8px 17px -9px #000000;
 }
+button.menu-btn--order {
+  width: 185px;
+}
+@media all and (min-width: 1024px) {
+  button.menu-btn--order {
+    width: 220px;
+  }
+}
 
 .list-functionality .card-functionality {
   height: 73px;
@@ -373,7 +381,11 @@ body > header .link-logo {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+@media all and (min-width: 1440px) {
+  .restaurants {
+    align-items: center;
+  }
 }
 .restaurants .list-restaurants {
   display: flex;

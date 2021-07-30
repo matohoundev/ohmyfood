@@ -7,4 +7,10 @@ button {
     border: none;
     border-radius: 200px;
     box-shadow: $shadow-black;
+    &.menu-btn--order{
+        width: 185px;
+        @media all and (min-width: $md) {
+            width: 220px;
+          }
+    }
 }
