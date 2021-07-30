@@ -18,7 +18,7 @@ body > header, nav, section:not(main section), footer {
   padding: 0 20px;
 }
 
-main section:not(main > section > section) {
+main section:not(main > section > div > section) {
   padding: 0 15px;
 }
 

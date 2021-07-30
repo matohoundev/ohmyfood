@@ -25,34 +25,52 @@ main {
                 padding-right: 25px;
             }
         }
-      
-        .block-menu {
+        .all-menu {
             width: 100%;
-            h3 {
-                position: relative;
-                padding-bottom: 8px;
+            max-width: $lm;
+            @media all and (min-width: $lm) {
+                display: flex;
             }
-            h3::after {
-                content: "";
-                width: 42px;
-                height: 3px;
-                background-color: #99e2d0;
-                position: absolute;
-                left: 0;
-                bottom: 0;
-            }
-            .list-menu {
-                li {
-                    display: flex;
-                    justify-content: center;
-                    padding-top: 15px;
+            .block-menu {
+                width: 100%;
+                h3 {
+                    position: relative;
+                    padding-bottom: 8px;
                     @media all and (min-width: $sm) {
-                        // display: flex;
-                        // justify-content: center;
+                        text-align: center;
                     }
-                    &:last-child {
-                        padding-bottom: 15px;
-                    } 
+                    @media all and (min-width: $lm) {
+                        text-align: start;
+                    }
+                }
+                h3::after {
+                    content: "";
+                    width: 42px;
+                    height: 3px;
+                    background-color: #99e2d0;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    @media all and (min-width: $sm) {
+                        width: 25%;
+                        left: 37.3%;
+                    }
+                    @media all and (min-width: $lm) {
+                        width: 42px;
+                        left: 0;
+                    }
+                }
+                .list-menu {
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 15px;
+                        @media all and (min-width: $lm) {
+                        }
+                        &:last-child {
+                            padding-bottom: 15px;
+                        } 
+                    }
                 }
             }
         }
