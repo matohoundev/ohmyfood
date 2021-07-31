@@ -147,6 +147,7 @@ button {
   border: none;
   border-radius: 200px;
   box-shadow: 6px 8px 17px -9px #000000;
+  transition-duration: 300ms;
 }
 button.menu-btn--order {
   width: 185px;
@@ -155,6 +156,10 @@ button.menu-btn--order {
   button.menu-btn--order {
     width: 220px;
   }
+}
+button:hover {
+  opacity: 80%;
+  box-shadow: 6px 8px 20px -6px #000000;
 }
 
 .list-functionality .card-functionality {
@@ -247,10 +252,31 @@ button.menu-btn--order {
 .list-restaurants .card-restaurant__icon {
   height: 78px;
   width: 20%;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.list-restaurants .card-restaurant__icon .heart1 {
+  position: relative;
+  z-index: 1;
+  transform: scale(0.9);
+}
+.list-restaurants .card-restaurant__icon .heart2 {
+  z-index: 2;
+  position: absolute;
+  font-weight: bold;
+  background: -webkit-linear-gradient(175deg, #ff79da 10%, #9356dc 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition-duration: 100ms;
+  transform: scale(0.4);
+  opacity: 0;
+}
+.list-restaurants .card-restaurant__icon .heart2:hover {
+  opacity: 100%;
+  transform: scale(1);
 }
 
 .list-menu .card-menu {
@@ -430,11 +456,12 @@ main .menu {
 }
 main .menu-header {
   width: 100%;
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
 }
-main .menu-header .fa-heart {
+main .menu-header_icon .fa-heart {
   padding-right: 25px;
 }
 main .menu .all-menu {

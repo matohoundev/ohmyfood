@@ -7,10 +7,15 @@ button {
     border: none;
     border-radius: 200px;
     box-shadow: $shadow-black;
+    transition-duration: 300ms;
     &.menu-btn--order{
         width: 185px;
         @media all and (min-width: $md) {
             width: 220px;
           }
+    }
+    &:hover {
+        opacity: 80%;
+        box-shadow: $shadow-black--xl;
     }
 }

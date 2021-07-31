@@ -7,13 +7,13 @@ $third-color: #99E2D0;
 $color-dark:#000000;
 $color-grey:#EAEAEA;
 $color-clear:#ffffff;
-$colorT: transparent;
 
 /*Box shadow*/
 
 $shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
 $shadow-dark: 0 5px 10px 1px darken($color-grey, 6%);
 $shadow-black: 6px 8px 17px -9px $color-dark;
+$shadow-black--xl: 6px 8px 20px -6px $color-dark;
 
 /*Border*/
 
