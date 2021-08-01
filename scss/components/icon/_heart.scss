@@ -1,20 +1,20 @@
-// .heart1 {
-//     position: relative;
-//     z-index: 1;
-//     transform: scale(0.9);
-// }
-// .heart2 {
-//     z-index: 2;
-//     position: absolute;
-//     font-weight: bold;
-//     background: -webkit-linear-gradient( 175deg ,#ff79da 10%,#9356dc 95%);
-//     -webkit-background-clip: text;
-//     -webkit-text-fill-color: transparent;
-//     transition-duration: 100ms;
-//     transform: scale(0.4);
-//     opacity: 0;
-//     &:hover {
-//         opacity: 100%;
-//         transform: scale(1);
-//     }
-// }
+.heart1 {
+    position: relative;
+    z-index: 1;
+    transform: scale(0.9);
+}
+.heart2 {
+    z-index: 2;
+    position: absolute;
+    font-weight: bold !important;
+    background: -webkit-linear-gradient( 175deg ,$secondary-color 10%,$main-color 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition-duration: 100ms;
+    transform: scale(0.4);
+    opacity: 0;
+    &:hover {
+        opacity: 100%;
+        transform: scale(1);
+    }
+}
