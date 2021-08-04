@@ -104,6 +104,11 @@ a {
   color: #3f3d3d;
 }
 
+.fa-check-circle {
+  font-size: 20px;
+  color: transparent;
+}
+
 button {
   font-family: "Roboto_re";
   font-size: 16px;
@@ -268,13 +273,16 @@ button:hover {
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 0 5px 10px 1px #dbdbdb;
+  overflow: hidden;
 }
 .list-menu .card-menu__txt {
-  width: 78%;
+  max-width: 78%;
+  width: 100%;
   padding-left: 14px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition-duration: 500ms;
 }
 .list-menu .card-menu__txt h4 {
   padding-bottom: 3px;
@@ -285,11 +293,41 @@ button:hover {
   text-overflow: ellipsis;
 }
 .list-menu .card-menu__price {
-  width: 22%;
+  max-width: 22%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  transition-duration: 500ms;
+}
+.list-menu .card-menu__price p {
   padding-bottom: 15px;
+}
+.list-menu .card-menu__price .add-meal {
+  display: flex;
+  transform: translateX(100%);
+  transition-duration: 500ms;
+  min-width: 60px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.list-menu .card-menu:hover .card-menu__txt {
+  max-width: 63%;
+  width: 100%;
+}
+.list-menu .card-menu:hover .card-menu__price {
+  max-width: 37%;
+  width: 100%;
+}
+.list-menu .card-menu:hover .card-menu__price .add-meal {
+  width: 100%;
+  margin-left: 25px;
+  background-color: #99E2D0;
+  transform: translateX(0%);
+}
+.list-menu .card-menu:hover .card-menu__price .add-meal .fa-check-circle {
+  color: #ffffff;
 }
 
 .heart1 {
@@ -305,7 +343,7 @@ button:hover {
   background: -webkit-linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
   transform: scale(0.4);
   opacity: 0;
 }

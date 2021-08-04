@@ -47,9 +47,16 @@ a {
     color: $color-dark;
 }
 
+// icon 
+
 .fa-heart {
     font-size: 27px;
     color: rgb(63, 61, 61);
+}
+
+.fa-check-circle {
+    font-size: 20px;
+    color: $transparent;
 }
 
 button{

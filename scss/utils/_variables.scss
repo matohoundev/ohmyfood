@@ -7,6 +7,7 @@ $third-color: #99E2D0;
 $color-dark:#000000;
 $color-grey:#EAEAEA;
 $color-clear:#ffffff;
+$transparent: transparent;
 
 /*Box shadow*/
 
@@ -34,3 +35,11 @@ $xxlm: 2500px;
 
 $width-txt: 78%;
 $width-price: 22%;
+
+$width-txt--add-meal: 63%;
+$width-price--add-meal: 37%;
+
+// duration
+
+$fast: 300ms;
+$normal: 500ms;

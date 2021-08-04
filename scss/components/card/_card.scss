@@ -117,12 +117,16 @@
         border-radius: $arrondi;
         background-color: $color-clear;
         box-shadow: $shadow-dark;
+        overflow: hidden;
         &__txt {
-            width: $width-txt;
+            max-width: $width-txt;
+            width: 100%;
             padding-left: 14px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            // border: 1px solid red;
+            transition-duration: 500ms;
             h4 {
                 padding-bottom: 3px;
             }
@@ -134,11 +138,45 @@
             
         }
         &__price {
-            width: $width-price;
+            max-width: $width-price;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            padding-bottom: 15px;
+            transition-duration: 500ms;
+            p {
+                padding-bottom: 15px;
+            }
+            .add-meal {
+                display: flex;
+                transform: translateX(100%);
+                transition-duration: 500ms;
+                
+                min-width: 60px;// y'a un truc la
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &:hover {
+            .card-menu__txt {
+                max-width: $width-txt--add-meal;
+                width: 100%;
+            }
+
+            .card-menu__price {
+                max-width: $width-price--add-meal;
+                width: 100%;
+                .add-meal{
+                    width:100%;
+                    margin-left: 25px;
+                    background-color: $third-color;
+                    transform: translateX(0%);
+                    .fa-check-circle {
+                        color: $color-clear;
+                    }
+                }
+            }
         }
     }
 }
