@@ -76,12 +76,19 @@ main {
                             padding-bottom: 15px;
                         } 
                     }
-                    @while $i {
+                    
+                    @for $i from 1 through 5 {
                         li:nth-child(#{$i}) {
-                            animation: card-appear $slow*$i ease-out 5s;
+                            animation: card-appear $slow*$i ease-out;
                             $i: $i + 1 ;
                          }
                     }
+                    // @while $i < 5 {
+                    //     li:nth-child(#{$i}) {
+                    //         animation: card-appear $slow*$i ease-out;
+                    //         $i: $i + 1 ;
+                    //      }
+                    // }
                 }
             }
         }

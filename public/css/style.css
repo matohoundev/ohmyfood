@@ -580,16 +580,19 @@ main .menu .all-menu .block-menu .list-menu li:last-child {
   padding-bottom: 15px;
 }
 main .menu .all-menu .block-menu .list-menu li:nth-child(1) {
-  animation: card-appear ease-out 500ms;
+  animation: card-appear 500ms ease-out;
 }
 main .menu .all-menu .block-menu .list-menu li:nth-child(2) {
-  animation: card-appear ease-out 1000ms;
+  animation: card-appear 1000ms ease-out;
 }
 main .menu .all-menu .block-menu .list-menu li:nth-child(3) {
-  animation: card-appear ease-out 1500ms;
+  animation: card-appear 1500ms ease-out;
 }
 main .menu .all-menu .block-menu .list-menu li:nth-child(4) {
-  animation: card-appear ease-out 2000ms;
+  animation: card-appear 2000ms ease-out;
+}
+main .menu .all-menu .block-menu .list-menu li:nth-child(5) {
+  animation: card-appear 2500ms ease-out;
 }
 main .menu-btn {
   margin-top: 29px;
