@@ -282,35 +282,40 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition-duration: 500ms;
+  transition-duration: 400ms;
 }
-.list-menu .card-menu__txt h4 {
-  padding-bottom: 3px;
-}
-.list-menu .card-menu__txt p {
+.list-menu .card-menu__txt h4, .list-menu .card-menu__txt p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.list-menu .card-menu__txt h4 {
+  padding-bottom: 3px;
 }
 .list-menu .card-menu__price {
   max-width: 22%;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: flex-end;
-  transition-duration: 500ms;
+  transition-duration: 400ms;
 }
 .list-menu .card-menu__price p {
   padding-bottom: 15px;
+  margin-left: 25px;
 }
 .list-menu .card-menu__price .add-meal {
-  display: flex;
-  transform: translateX(100%);
-  transition-duration: 500ms;
-  min-width: 60px;
   height: 100%;
+  min-width: 60px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateX(45%);
+  transition-duration: 400ms;
+  background-color: #99E2D0;
+}
+.list-menu .card-menu__price .add-meal .fa-check-circle {
+  color: #ffffff;
+  transition-duration: 400ms;
 }
 .list-menu .card-menu:hover .card-menu__txt {
   max-width: 63%;
@@ -323,11 +328,11 @@ button:hover {
 .list-menu .card-menu:hover .card-menu__price .add-meal {
   width: 100%;
   margin-left: 25px;
-  background-color: #99E2D0;
-  transform: translateX(0%);
+  transform: translateX(-10.5%);
 }
 .list-menu .card-menu:hover .card-menu__price .add-meal .fa-check-circle {
   color: #ffffff;
+  transform: rotate(360deg);
 }
 
 .heart1 {
