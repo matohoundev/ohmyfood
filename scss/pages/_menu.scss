@@ -71,11 +71,16 @@ main {
                         display: flex;
                         justify-content: center;
                         padding-top: 15px;
-                        @media all and (min-width: $lm) {
-                        }
+                        // animation: card-appear 1s;
                         &:last-child {
                             padding-bottom: 15px;
                         } 
+                    }
+                    @while $i {
+                        li:nth-child(#{$i}) {
+                            animation: card-appear $slow*$i ease-out 5s;
+                            $i: $i + 1 ;
+                         }
                     }
                 }
             }
