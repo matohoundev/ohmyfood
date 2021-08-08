@@ -83,12 +83,6 @@ main {
                             $i: $i + 1 ;
                          }
                     }
-                    // @while $i < 5 {
-                    //     li:nth-child(#{$i}) {
-                    //         animation: card-appear $slow*$i ease-out;
-                    //         $i: $i + 1 ;
-                    //      }
-                    // }
                 }
             }
         }

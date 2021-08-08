@@ -40,6 +40,7 @@
 }
 
 body {
+  z-index: 1;
   margin: 0;
   font-family: "roboto_re", Georgia, "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
@@ -62,8 +63,36 @@ a {
   text-decoration: none;
 }
 
+.loading {
+  z-index: 4;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+}
+.loading__bg {
+  z-index: 3;
+  position: absolute;
+  background-color: white;
+}
+.loading p {
+  color: black;
+}
+
+body {
+  animation: scroll-hidden 3s;
+}
+
 h2 {
   font-family: "roboto_ex_bold";
+}
+
+.loading p {
+  font-family: "Shrikhand";
+  font-size: 40px;
 }
 
 .card-restaurant__txt h3 {
@@ -151,6 +180,15 @@ footer .logo {
   100% {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+@keyframes loading-effect {}
+@keyframes scroll-hidden {
+  0% {
+    overflow-y: hidden;
+  }
+  100% {
+    overflow-y: scroll;
   }
 }
 button {

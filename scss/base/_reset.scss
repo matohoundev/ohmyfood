@@ -7,7 +7,7 @@
 }
 
 body {
-  // max-width: 1600px;
+  z-index: 1;
   margin: 0;
   font-family: "roboto_re", Georgia, "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
@@ -28,4 +28,29 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.loading {
+  z-index: 4;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  &__bg {
+    z-index: 3;
+    position: absolute;
+    // width: 100vw;
+    // height: 100vh;
+    background-color: white;
+  }
+  p {
+    color: black;
+    }
+}
+
+body {
+  animation: scroll-hidden 3s;
 }

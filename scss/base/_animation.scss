@@ -8,3 +8,16 @@
         transform: translateY(0%);
     }
 }
+
+@keyframes loading-effect {
+    
+}
+
+@keyframes scroll-hidden {
+    0% {
+        overflow-y: hidden; 
+    }
+    100% {
+        overflow-y: scroll;
+    }
+}
