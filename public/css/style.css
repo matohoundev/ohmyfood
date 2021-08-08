@@ -71,15 +71,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blue;
-}
-.loading__bg {
-  z-index: 3;
-  position: absolute;
   background-color: white;
-}
-.loading p {
-  color: black;
+  animation: loading-disappear 3s 1s p;
+  animation-opacity: 0;
+  animation-animation: loading-effect 3s;
+  animation-transform: scale(0.4);
 }
 
 body {
@@ -182,9 +178,31 @@ footer .logo {
     transform: translateY(0%);
   }
 }
-@keyframes loading-effect {}
+@keyframes loading-disappear {}
+@keyframes loading-effect {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    color: #99E2D0;
+  }
+  40% {
+    color: #FF79DA;
+  }
+  60% {
+    color: #9356DC;
+  }
+  100% {
+    color: #000000;
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
 @keyframes scroll-hidden {
   0% {
+    overflow-y: hidden;
+  }
+  99% {
     overflow-y: hidden;
   }
   100% {

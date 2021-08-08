@@ -9,12 +9,40 @@
     }
 }
 
+@keyframes loading-disappear {
+    0% {
+
+    }
+    100% {
+        
+    }
+}
+
 @keyframes loading-effect {
-    
+    0% {
+        opacity: 0;
+    }
+    20% {
+        color: $third-color;
+    }
+    40% {
+        color: $secondary-color;
+    }
+    60% {
+        color: $main-color;
+    }
+    100% {
+        color: $color-dark;
+        transform: scale(1.2);
+        opacity: 1;
+    }
 }
 
 @keyframes scroll-hidden {
     0% {
+        overflow-y: hidden; 
+    }
+    99% {
         overflow-y: hidden; 
     }
     100% {

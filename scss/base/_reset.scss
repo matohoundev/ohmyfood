@@ -38,16 +38,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blue;
-  &__bg {
-    z-index: 3;
-    position: absolute;
-    // width: 100vw;
-    // height: 100vh;
-    background-color: white;
-  }
+  background-color: white;
+  animation: loading-disappear 3s 1s
   p {
-    color: black;
+    opacity: 0;
+      animation: loading-effect 3s;
+      transform: scale(0.4);
     }
 }
 
