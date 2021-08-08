@@ -72,10 +72,12 @@ a {
   align-items: center;
   justify-content: center;
   background-color: white;
-  animation: loading-disappear 3s 1s p;
-  animation-opacity: 0;
-  animation-animation: loading-effect 3s;
-  animation-transform: scale(0.4);
+  animation: loading-disappear 1s 2s;
+}
+.loading p {
+  opacity: 0;
+  animation: loading-effect 3s;
+  transform: scale(0.4);
 }
 
 body {
@@ -178,7 +180,14 @@ footer .logo {
     transform: translateY(0%);
   }
 }
-@keyframes loading-disappear {}
+@keyframes loading-disappear {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 @keyframes loading-effect {
   0% {
     opacity: 0;
