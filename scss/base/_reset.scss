@@ -31,7 +31,7 @@ a {
 }
 
 .loading {
-  z-index: 4;
+  z-index: 3;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -40,10 +40,11 @@ a {
   justify-content: center;
   background-color: white;
   animation: loading-disappear 1s 2s;
+  animation-fill-mode: forwards;
   p {
     opacity: 0;
-      animation: loading-effect 3s;
-      transform: scale(0.4);
+    animation: loading-effect 3s;
+    transform: scale(0.4);
     }
 }
 

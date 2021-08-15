@@ -64,7 +64,7 @@ a {
 }
 
 .loading {
-  z-index: 4;
+  z-index: 3;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -73,6 +73,7 @@ a {
   justify-content: center;
   background-color: white;
   animation: loading-disappear 1s 2s;
+  animation-fill-mode: forwards;
 }
 .loading p {
   opacity: 0;
@@ -195,15 +196,21 @@ footer .logo {
   20% {
     color: #99E2D0;
   }
+  30% {
+    transform: scale(1.5);
+  }
   40% {
     color: #FF79DA;
   }
   60% {
     color: #9356DC;
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.5);
   }
   100% {
     color: #000000;
-    transform: scale(1.2);
     opacity: 1;
   }
 }

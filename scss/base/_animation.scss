@@ -25,15 +25,21 @@
     20% {
         color: $third-color;
     }
+    30% {
+        transform: scale(1.5);
+    }
     40% {
         color: $secondary-color;
     }
     60% {
         color: $main-color;
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(1.5);
     }
     100% {
         color: $color-dark;
-        transform: scale(1.2);
         opacity: 1;
     }
 }
