@@ -28,7 +28,7 @@
                 color: darken($color-grey, 60%);
                 font-size: 20px;
             }
-            &--purple {
+            &:hover {
                 background-color: lighten($main-color, 33%);
                 i {
                     color: $main-color;
