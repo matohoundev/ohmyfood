@@ -78,7 +78,7 @@
             flex-flow: row wrap;
             align-items: flex-start;
         }
-        @media all and (min-device-width: $sm) and (max-device-width: 1106px) {
+        @media all and (min-width: $sm) and (max-width: 1106px) {
             justify-content: center;
         }
           .card-restaurant {
